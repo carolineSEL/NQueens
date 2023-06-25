@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NQueens
+comment0.text=\r\n\ \ Environment-Based\ Applications\:<br>\r\n\r\n\ \ \ \ The\ NQueens\ class\ implements\ the\ N\ Queens\ problem.\r\n\r\n\ \ @author\ Caroline\ Lamb\ (assisted\ by\ Collaboration\ Center\ on\ 11/4/2021)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (based\ on\ a\ template\ provided\ by\ Alyce\ Brady)\r\n\ \ @version\ 3\ November\ 2021\r\n
+comment1.params=
+comment1.target=int\ numQueens()
+comment1.text=Returns\ the\ number\ of\ queens\ to\ be\ placed\ on\ the\ board.\ *
+comment2.params=
+comment2.target=boolean\ solve()
+comment2.text=Solves\ (or\ attempts\ to\ solve)\ the\ N\ Queens\ Problem.\ *
+comment3.params=q
+comment3.target=boolean\ placeQueen(int)
+comment3.text=\ Attempts\ to\ place\ the\ <code>q</code>th\ queen\ on\ the\ board.\r\n\ \ (Precondition\:\ <code>0\ <\=\ q\ <\ numQueens()</code>)\r\n\ \ \ \ @param\ q\ index\ of\ next\ queen\ to\ place\r\n
+numComments=4

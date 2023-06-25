@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NQueensLab
+comment0.text=\r\n\ \ Environment-Based\ Applications\:<br>\r\n\r\n\ \ \ \ The\ NQueensLab\ class\ implements\ the\ N\ Queens\ problem.\r\n\r\n\ \ @author\ Alyce\ Brady\r\n\ \ @version\ 1\ September\ 2002\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ Starts\ the\ N\ Queens\ program.\r\n\ \ The\ String\ arguments\ (args)\ are\ not\ used\ in\ this\ application.\r\n
+numComments=2

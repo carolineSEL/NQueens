@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Queen
+comment0.text=\r\n\ \ Environment-Based\ Applications\:<br>\r\n\r\n\ \ \ \ A\ Queen\ object\ represents\ a\ queen\ in\ the\ N\ Queens\ Problem.\r\n\r\n\ \ @author\ Alyce\ Brady\r\n\ \ @version\ 1\ November\ 2002\r\n
+comment1.params=col
+comment1.target=void\ setQueenColor(java.awt.Color)
+comment1.text=Defines\ the\ color\ to\ make\ all\ queens.\ *
+numComments=2

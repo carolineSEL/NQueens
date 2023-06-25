@@ -1,0 +1,132 @@
+<html><head><title>Recursion: N Queens Lab</title>
+   
+   <link href="mailto:abrady@kzoo.edu">
+   <link rel="STYLESHEET" type="text/css" href="labs.css"></head>
+<body>
+
+<DIV ID=siteTitle>
+  <H1> Recursion Lab: N Queens Problem</H1>
+</DIV>
+
+<DIV ID=author>
+  <a href="http://max.cs.kzoo.edu/~abrady/">Alyce Brady</a><br>
+  <a href="http://www.kzoo.edu/">Kalamazoo College</a>
+</DIV>
+
+<hr WIDTH="100%">
+
+<p> In this lab you will implement the N Queens Problem, using the <code>BoundedGrid</code> 
+  class.<sup>&#8225;</sup> 
+  In this lab you will implement an algorithm that places N queens on an N x N 
+  board (like a chess board) in such a way that no queen can attack another queen.</p>
+
+<table width="90%" border="1" align="center">
+  <tbody><tr><td>
+<h4>Exercise Set</h4>
+          
+        <ol>
+          <li>Download the zip file that contains the starting code files for 
+            the N Queens Lab (<code><a href="NQueens.zip">NQueens.zip</a></code>) 
+            and unzip it.  When you unzip the file you will see the
+following files and folders. 
+             <ul>
+            <li>The file <code><a
+href="NQueensLab.shtml">NQueensLab.shtml</a></code> contains this
+write-up.   
+            <li>Two image files, <code>GoldCrown.gif</code> and
+<code>SilverCrown.gif</code> (images of crowns).
+            <li>The <code>grid.jar</code> Java archive
+(<code>jar</code>) file
+                  contains a library of classes that can be used to
+model a two-dimensional grid as described above.
+                <ul>
+                  <li><code>BoundedGrid</code> (class that represents
+the two-dimensional grid)<sup>&#8225;</sup></li>
+                  <li><code>Location</code> (class that represents the
+row and column positions of a location in the 
+grid)<sup>&#8225;</sup></li>
+                  <li><code>ColorBlock</code> (class whose objects
+represent blocks of color put in a grid)</li>
+                </ul>
+             The documentation for these files can be found by
+downloading the 
+<a href="http://www.cs.kzoo.edu/GridPkg/GridPkgClassDocs.zip">GridPkgClassDocs.zip</a> file.
+                       </li>
+          <p></p>
+	    <li>The <code>JavaSourceFiles</code> folder contains the
+source files for the NQueens Lab.
+            <ul>
+              <li><code>NQueensLab</code> (contains the <code>main</code> method)</li>
+              <li><code>NQueens</code> (the class that implements the solution 
+                to the N Queens Problem) </li>
+              <li><code>Queen</code> (represents a queen on the board)</li>
+            </ul>
+            </ul>
+            <br>
+            Note: All of the
+            classes in the <code>JavaSourceFiles</code> folder and the
+<code>grid.jar</code> Java archive file are covered by the <a
+href="/License.txt">GNU General Public License.</a>
+          </ul>
+            <p> </p>
+          <li>Compile and run the program. You should see an 8 x 8 &quot;chess 
+            board&quot; with no queens. 
+            <p> </p>
+          </li>
+          <li>Complete the <code>numQueens</code> and <code>removeQueen</code> 
+            methods, without adding any additional instance variables.&nbsp; To 
+            test the <code>removeQueen</code> method, modify the <code>placeQueen</code> 
+            method to add a queen to any arbitrary column (your choice) of the 
+            correct row for that queen, display the environment, and then remove 
+            the queen and redisplay the environment.&nbsp; Modify the <code>solve</code> 
+            method to place one queen.&nbsp; Run the program.&nbsp; You should 
+            see one queen (or color block) appear and then disappear from the 
+            environment. 
+            <p> </p>
+          </li>
+          <li>Modify the <code>placeQueen</code> method to recursively place all 
+            the queens in arbitrary columns (or the same arbitrary column).&nbsp; 
+            Think about where you should place the recursive call if you want 
+            to see the queens appear in each row, one-by-one, and then disappear 
+            in reverse order.&nbsp; Make sure you remember to include a base case.&nbsp; 
+            Do you need to modify the <code>solve</code> method to place all the 
+            queens?&nbsp; If so, do it. 
+            <p> </p>
+          </li>
+          <li>Fully implement the <code>placeQueen</code> method so that it checks 
+            column by column to find an OK location to place this queen, until 
+            the queen has been successfully placed in a column and all the queens 
+            after her have been successfully placed also.&nbsp; Since the <code>locationIsOK</code> 
+            method always returns <code>true</code>, the queens should fill in 
+            the first column. 
+            <p> </p>
+          </li>
+          <li>Modify the <code>locationIsOK</code> method to return <code>false</code> 
+            if any queens have already be placed in the same column as the location 
+            parameter.&nbsp; When you have this working you should see the queens 
+            fill in the diagonal from location (0, 0) to location (n-1, n-1). 
+            <p> </p>
+          </li>
+          <li>Modify the <code>locationIsOK</code> method again to also return 
+            <code>false</code> if any queens have already been placed on the board 
+            in locations that are on the diagonal from the location parameter. 
+          </li>
+        </ol>
+
+</td></tr>
+</tbody></table>
+<hr>
+<hr>
+<div id=footer>
+  <sup>&#8225;</sup>The <code>Location</code> class comes directly 
+  from the AP<sup>&reg;</sup> Marine Biology Simulation case study;
+<code>BoundedGrid</code> was inspired by the MBS <code>BoundedEnv</code>
+class.&nbsp; AP is a registered trademark 
+  of the College Entrance Examination Board. The Marine Biology Simulation case 
+  study was copyrighted in 2002 by the College Entrance Examination Board.&nbsp; 
+  It is available on the web from the College Board web site (<a href="http://www.collegeboard.com/ap/students/compsci/download.html">www.collegeboard.com</a> 
+  and <a href="http://apcentral.collegeboard.com">apcentral.collegeboard.com</a>).<br>
+  &nbsp;<br>
+  Copyright Alyce Brady, 2002. </div>
+
+</body></html>
